@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: sui_ipdemo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/sui_ipdemo?useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+
+  flyway:
+    schemas: sui_ipdemo
+    url: jdbc:mysql://localhost:3306?useSSL=false
+    user: root
+    password:
+    locations: classpath:db/migration
+server:
+  port: 8080
